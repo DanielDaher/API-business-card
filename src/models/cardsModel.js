@@ -4,8 +4,8 @@ const { ObjectId } = require('mongodb');
 const create = async ({ name, linkedinURL, githubURL }) => {
   const query = { name, linkedinURL, githubURL };
   const db = await connection();
-  await db.collection('cards').insertOne(query);
-  return 'card created successfully';
+  const { insertedId } = await db.collection('cards').insertOne(query);
+  return insertedId;
 };
 
 const getById = async (id) => {
