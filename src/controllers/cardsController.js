@@ -12,6 +12,19 @@ const create = async (req, res) => {
   }
 };
 
+const getById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const card = await cardsService.getById(id);
+
+    res.status(card.statusCode).json(card.responseMessage);
+  } catch (error) {
+    console.error(error);
+    res.status(400).json({ message: 'error, try again latter' });
+  }
+};
+
 module.exports = {
   create,
+  getById,
 };
