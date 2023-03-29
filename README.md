@@ -8,6 +8,9 @@ O objetivo do projeto é gerar um QR Code que redirecione para uma página com a
 ## Para acessar e utilizar a aplicação em produção:
 [Business-Card](https://business-card-danieldaher.vercel.app/)
 
+## Para acessar o repositório do frontend:
+[Frontend](https://github.com/DanielDaher/business-card)
+
 ## Funcionalidades da aplicação
 
 A aplicação está em inglês, mas basta pedir para que o navegador traduza que continuará funcionando perfeitamente.
